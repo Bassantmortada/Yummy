@@ -1,0 +1,59 @@
+body{
+background-color: #0D0D0D;
+overflow: hidden;
+}
+.loading-screen{
+    z-index: 999;
+    display: flex;
+}
+
+.inner-loading-screen{
+    position: absolute;
+    z-index: 9;
+    background-color: #0D0D0D;
+    display:flex;
+}
+.side-nav {
+white-space: nowrap;
+z-index: 9999;
+}
+.list-unstyled li , .icon-menu , .Countries , .ingredients , .meal , .ingredients-cards{
+cursor: pointer;
+}
+.side-nav , .nav-tab{
+height: 100%;
+}
+.logo-app img{
+width: 50px;
+}
+
+/* meal  & categ*/
+.layer-meal , .layer-cate{
+position: absolute;
+width: 100%;
+height: 100%;
+top: 100%;
+background-color: #faf8f6ad;
+transition: .3s
+;
+}
+.meal:hover .layer-meal{
+top: 0;
+}
+.meal:hover .layer-cate{
+top: 0;
+}
+
+/* countries  & checken */
+.fs-icon-countries , .icon-checken{
+font-size: 64px;
+}
+.fs-name-countries{
+font-size: 28px;
+}
+.alert{
+width: fit-content;
+}
+.container{
+color: white !important;
+}

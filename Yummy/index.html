@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <title>Yummy</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!--========================== sideNav ======================== -->
+    <div
+      class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center"
+    >
+      <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+
+    <div class="side-nav text-white d-flex position-fixed">
+      <div class="outer-sid">
+        <div
+          class="nav-tab bg-black d-flex flex-column justify-content-between px-4 py-3"
+        >
+          <div class="links">
+            <ul class="list-unstyled">
+              <li onclick="showSearchInputs()" id="search" class="my-3">
+                Search
+              </li>
+              <li onclick="getCategories()" id="categories" class="my-3">
+                Categories
+              </li>
+              <li onclick="getArea()" id="area" class="my-3">Area</li>
+              <li onclick="getIngredients()" id="ingredients" class="my-3">
+                Ingredients
+              </li>
+              <li onclick="showContacts()" id="contact-us" class="my-3">
+                Contact Us
+              </li>
+            </ul>
+          </div>
+          <div class="social-links">
+            <div class="icons">
+              <span><i class="fa-brands fa-facebook"></i></span>
+              <span><i class="fa-brands fa-twitter"></i></span>
+              <span><i class="fa-solid fa-globe"></i></span>
+            </div>
+            <p>Copyright Â© 2019 All Rights <br />Reserved.</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="header-nav d-flex flex-column justify-content-between bg-white px-2 py-3"
+      >
+        <div class="logo-app">
+          <img src="images/logo.png" alt="" class="logo smile app" />
+        </div>
+        <div class="icon-menu text-black">
+          <i
+            class="fa-solid open-close-icon fa-align-justify fs-2 ps-2 icon-menue"
+          ></i>
+        </div>
+        <div class="icons d-flex flex-column p-3 text-black">
+          <i class="fa-solid fa-globe pb-2"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+    <div class="container w-75" id="searchContainer"></div>
+
+    <!--============================ first page =================-->
+
+    <!--========================categories ===================-->
+    <div class="categories">
+      <div class="container py-4">
+        <div class="row" id="rowData"></div>
+      </div>
+    </div>
+    <!--========================Data in categories ===================-->
+    <div class="data-in-categories">
+      <div class="container py-4">
+        <div class="row" id="rowData"></div>
+      </div>
+    </div>
+    <!--======================== area ===================-->
+    <div class="area">
+      <div class="container py-4">
+        <div class="row" id="rowData"></div>
+      </div>
+    </div>
+
+    <!--======================== Ingredients ===================-->
+    <div class="Instructions">
+      <div class="container py-4 text-white">
+        <div class="row g-4" id="rowData"></div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
